@@ -8,3 +8,14 @@ class Account_modelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account_model
         fields = ('account', 'type', 'company')
+
+
+class User_modelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User_model
+        fields = ('ID', 'name', 'account')
+
+class Shipping_modelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Shipping_model
+        fields = ('account', 'ID', 'delivered', 'status')
