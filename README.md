@@ -1,2 +1,2 @@
 # django-react-webapp
-Show django and react skills
+This is a simple webapp using Django rest framework with react front end.  
