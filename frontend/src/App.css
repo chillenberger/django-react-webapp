@@ -1,38 +1,113 @@
+
+body{
+  font-family: Vredana, sansa-serif;
+  font-size: 18px;
+}
+
+a {
+  color: var(--theme-main-black);
+  text-decoration: none;
+  opacity: 1;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    overflow: visible;
+    background-color: rgb(20, 123, 209)
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* menubar */
+
+.mainContainer {
+  display: flex;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* login */
+
+.mainHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imageContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Forms */
+#loginFormContainer {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Buttons */
+
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 8px;
+  background-color: var(--theme-main-black);
+  background: linear-gradient(94deg, rgba(40,44,52,1) 0%, rgba(55,60,70,1) 100%);
+  /* background: rgb(111,168,220); */
+  /* background: linear-gradient(59deg, rgba(61,133,198,1) 0%, rgba(111,168,220,1) 100%); */
+  border-radius: 10px;
+  color: var(--theme-main-white);
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  background: linear-gradient(59deg, rgba(61,133,198,1) 0%, rgba(111,168,220,1) 100%);
+  /* background: linear-gradient(59deg, var(--theme-main-black) 0%, rgba(50, 50, 50, .75) 100%); */
+  /* border: 1px solid var(--theme-main-white); */
+  border-radius: 10px;
+
+  box-shadow: none;
+}
+
+.cardHeader {
+  flex: 2;
+  text-align: center;
+  margin: 2px;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+.cardIcon {
+  flex: 1;
+  margin: 1px;
+  padding: 1px;
 }
