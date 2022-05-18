@@ -35,9 +35,12 @@ const AccountDash = () => {
 
 const ShipmentDash = () => {
   return (
-    <>
+    <div id='shipmentDash'>
+      <div>
+        display
+      </div>
       <ShipmentTable/>
-    </>
+    </div>
   )
 }
 
