@@ -217,6 +217,7 @@ hr {
   margin: 5%;
   align-items: center;
   justify-content: center;
+  max-height: 15vh;
 }
 
 /* table */

@@ -39,6 +39,7 @@ const ShipmentDash = () => {
       <div>
         display
       </div>
+      <hr/>
       <ShipmentTable/>
     </div>
   )
