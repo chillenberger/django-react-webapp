@@ -15,7 +15,6 @@ const changeDash=(action, dash)=>{
   action({
     display: dash
   })
-  console.log(action)
 }
 
 function SideNavBar(props) {
@@ -27,23 +26,31 @@ function SideNavBar(props) {
           className='logoSmall'/>
       </div>
         <div id='firstButton' className='dashButton'>
-          <button onClick={() => changeDash(props.action, 'account')}>
+          <button
+            onClick={() => changeDash(props.action, 'account')}
+            style={{width: '100%'}}>
             <p>Account</p>
           </button>
         </div>
       <div className='dashButton'>
-        <button onClick={() => changeDash(props.action, 'shipment')}>
+        <button
+          onClick={() => changeDash(props.action, 'shipment')}
+          style={{width: '100%'}}>
           <p>Shipments</p>
         </button>
       </div>
 
       <div className='dashButton'>
-        <button onClick={() => changeDash(props.action, 'billing')}>
+        <button
+          onClick={() => changeDash(props.action, 'billing')}
+          style={{width: '100%'}}>
           <p>Billing</p>
         </button>
       </div>
       <div id='lastButton' className='dashButton'>
-        <button onClick={() => changeDash(props.action, 'settings')}>
+        <button
+          onClick={() => changeDash(props.action, 'settings')}
+          style={{width: '100%'}}>
           <p>Settings</p>
         </button>
       </div>

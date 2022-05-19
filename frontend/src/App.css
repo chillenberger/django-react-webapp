@@ -189,7 +189,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 5rem;
+  padding: 3rem 5rem;
   flex-direction: column;
 }
 
@@ -203,6 +203,8 @@ hr {
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #businessData {
@@ -214,24 +216,85 @@ hr {
 
 .smallChart {
   flex: 1;
-  margin: 5%;
+  margin: 2rem;
   align-items: center;
   justify-content: center;
   max-height: 15vh;
+  max-width: 30vw;
 }
 
 /* table */
 .tableBody {
   display: flex;
   flex-direction: column;
+  width: 60vw;
 }
 
 .tableRow {
   display: flex;
   flex-direction: row;
+  flex: 1;
+  border-bottom: 1px solid #222a3031;
+  padding: 0rem 1rem;
+}
+
+.tableRow::selection {
+  background-color: #507aa9;
+  color: white;
+}
+
+#headerTableRow {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 0rem 1rem;
+}
+
+.tableRow:hover {
+  background-color: #507aa9;
+  color: white;
 }
 
 .tableHeadItem {
+  flex: 1;
   font-weight: bold;
-  margin: 0rem 1rem 0rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
+  justify-content: space-around;
+}
+
+.tableItem {
+  flex: 1;
+  justify-content: space-around;
+  margin: .5rem 0rem .5rem 0rem;
+}
+
+.iconNotComplete {
+  align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.iconComplete {
+  color: #507aa9;
+  align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.iconCircleComplete {
+  border-radius: 50%;
+  border: 3px solid #507aa9;
+  width: 3rem;
+}
+
+.iconCircleNotComplete {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 3rem;
+}
+
+/* charts */
+
+.chartHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
 }

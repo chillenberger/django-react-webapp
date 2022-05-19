@@ -5,7 +5,8 @@ import {
   DoughnutChart
 } from '../components/charts'
 import {
-  ShipmentTable
+  ShipmentTable,
+  ShippingTableDisplay
 } from '../components/tables'
 
 
@@ -35,11 +36,7 @@ const AccountDash = () => {
 
 const ShipmentDash = () => {
   return (
-    <div id='shipmentDash'>
-      <div>
-        display
-      </div>
-      <hr/>
+    <div>
       <ShipmentTable/>
     </div>
   )
